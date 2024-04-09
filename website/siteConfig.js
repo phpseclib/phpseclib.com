@@ -41,8 +41,7 @@ const siteConfig = {
     {doc: 'why', label: 'Docs'},
     {href: 'https://api.phpseclib.com', label: 'API'},
     {href: 'https://stackoverflow.com/questions/tagged/phpseclib', label: 'Support'},
-    {href: 'https://github.com/phpseclib/phpseclib', label: 'GitHub'},
-    {doc: 'for-enterprise', label: 'For Enterprise'}
+    {href: 'https://github.com/phpseclib/phpseclib', label: 'GitHub'}
   ],
 
   algolia: {
