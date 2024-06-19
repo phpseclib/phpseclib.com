@@ -87,7 +87,7 @@ echo base64_encode($key->encrypt('test'));
 ```
 <sup>_(sha1 is being used because the key is a 512-bit key from [Sample RSA Keys](/docs/rsa-keys); 512-bits is used for brevity but because it's 512-bits sha256 can't be used per the max size formulas discussed at [RSA::ENCRYPTION_OAEP](/docs/rsa#rsaencryption_oaep))_</sup>
 
-To decrypt that with C / OpenSSL you'll need to make the following changes to the above C code (using the [phpBB MOD Text Template](https://wiki.phpbb.com/MOD_Text_Template)):
+To decrypt that with C / OpenSSL you'll need to make the following changes to the above C code (using the [phpBB MOD Text Template](phpbb.md#actions)):
 
 ```c
 #

@@ -111,7 +111,7 @@ public class Test
 }
 ```
 
-The above code only works with PKCS1 keys. If you want to load a PKCS8 key you'll need to make the following changes (using the [phpBB MOD Text Template](https://wiki.phpbb.com/MOD_Text_Template)):
+The above code only works with PKCS1 keys. If you want to load a PKCS8 key you'll need to make the following changes (using the [phpBB MOD Text Template](phpbb.md#actions)):
 
 ```java
 #
@@ -309,7 +309,7 @@ public class Test
 }
 ```
 
-The above code only works with PKCS1 keys. If you want to load a PKCS8 key you'll need to make the following changes (using the [phpBB MOD Text Template](https://wiki.phpbb.com/MOD_Text_Template)):
+The above code only works with PKCS1 keys. If you want to load a PKCS8 key you'll need to make the following changes (using the [phpBB MOD Text Template](phpbb.md#actions)):
 
 ```java
 #

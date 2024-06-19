@@ -76,7 +76,7 @@ v/Ow5T0q5gIJAiEAyS4RaI9YG8EWx/2w0T67ZUVAw8eOMB6BIUg0Xcu+3okCIBOs
 ```
 (alternatively, one could call [`rsa.DecryptPKCS1v15`](https://pkg.go.dev/crypto/rsa@go1.21.5#DecryptPKCS1v15) instead of [`privateKey.Decrypt`](https://pkg.go.dev/crypto/rsa@go1.21.5#PrivateKey.Decrypt))
 
-The above code only works with PKCS1 keys. If you want to load a PKCS8 key you'll need to make the following changes (using the [phpBB MOD Text Template](https://wiki.phpbb.com/MOD_Text_Template)):
+The above code only works with PKCS1 keys. If you want to load a PKCS8 key you'll need to make the following changes (using the [phpBB MOD Text Template](phpbb.md#actions)):
 
 ```go
 #

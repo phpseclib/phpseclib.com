@@ -136,7 +136,7 @@ echo $x509->saveCSR($csr);
 
 Domains can be added to a CSR by doing `$x509->setDomain('www.domain.tld')`. Note that whereas `$x509->setDomain()` can be used to add multiple domains for X.509 certificates only one domain can be added, with this approach, to CSRs. This is a limitation of phpseclib - not of the CSR format.
 
-Multiple domains may be added by doing the following (using the [phpBB MOD Text Template](https://wiki.phpbb.com/MOD_Text_Template)):
+Multiple domains may be added by doing the following (using the [phpBB MOD Text Template](phpbb.md#actions)):
 
 ```php
 #

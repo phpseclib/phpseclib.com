@@ -112,7 +112,7 @@ class Test
 ```
 Note that `rsa.FromXmlString(key)` only supports XML formatted keys (as the name implies lol).
 
-If you're using .NET Core 3.0+ / are _not_ using [Mono](https://en.wikipedia.org/wiki/Mono_(software)), [ImportRSAPrivateKey](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.rsa.importrsaprivatekey?view=netcore-3.0) can be used to load PKCS1 formatted keys, using the following (untested) changes to the above (using the [phpBB MOD Text Template](https://wiki.phpbb.com/MOD_Text_Template)):
+If you're using .NET Core 3.0+ / are _not_ using [Mono](https://en.wikipedia.org/wiki/Mono_(software)), [ImportRSAPrivateKey](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.rsa.importrsaprivatekey?view=netcore-3.0) can be used to load PKCS1 formatted keys, using the following (untested) changes to the above (using the [phpBB MOD Text Template](phpbb.md#actions)):
 
 ```c#
 #
