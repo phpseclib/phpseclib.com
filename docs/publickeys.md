@@ -90,11 +90,11 @@ Supported key formats for a given algorithm can be determined by doing `\phpsecl
 
 **PuTTY** keys support DSA but only keys with an N (length of group order Q) of 160 are supported because that's all SSH2 supports. Similarily, PuTTY keys do not support the full gamut of curves that phpseclib supports (most notably, secp256k1, the Bitcoin curve). Both private and public keys are supported <sup style="color: red"><strong>[3]</strong></sup> as are v2 and, as of phpseclib v3.0.14, v3 formatted keys (with v2 being the default).
 
-**OpenSSH** keys have the same limitations as PuTTY keys. Both public and private keys are supported <sup style="color: red"><strong>[4]</strong></sup>. Notably, from OpenSSH 6.5 to 9.6 (2014-2023), this was the only format that OpenSSH supported for Ed25519 <sup style="color: red"><strong>[5]</strong></sup>. Encrypted keys are supported as of phpseclib v3.0.15.
+**OpenSSH** keys have the same limitations as PuTTY keys. Both public and private keys are supported <sup style="color: red"><strong>[4]</strong></sup>. Notably, from OpenSSH 6.5 to 9.6 (2014-2023), this was the only format that OpenSSH supported for Ed25519 <sup style="color: red"><strong>[5]</strong></sup>. Encrypted keys are supported as of phpseclib v3.0.15 <sup style="color: red"><strong>[6]</strong></sup>.
 
 **JWK** keys are supported as of phpseclib v3.0.15. DSA and encrypted private keys are not supported.
 
-**XML** keys only support private keys for RSA. Public keys are supported for all other algorithms, including RSA, but not Ed25519 / Curve25519 <sup style="color: red"><strong>[6]</strong></sup>.
+**XML** keys only support private keys for RSA. Public keys are supported for all other algorithms, including RSA, but not Ed25519 / Curve25519 <sup style="color: red"><strong>[7]</strong></sup>.
 
 <div style="font-size: 11px">
 
@@ -110,7 +110,9 @@ In PKCS8 the pre-encapsulation boundary for a private key is (by convention) `--
 
 <sup style="color: red"><strong>[5]</strong></sup> Quoting the [OpenSSH 6.5/6.5p1 (2014-01-30) changelog](https://www.openssh.com/txt/release-6.5), "_this format is used unconditionally for Ed25519 keys_". Quoting the [OpenSSH 9.6/9.6p1 (2023-12-18) changelog](https://www.openssh.com/txt/release-9.6), "_add support for reading ED25519 private keys in PEM PKCS8 format. Previously only the OpenSSH private key format was supported._".
 
-<sup style="color: red"><strong>[6]</strong></sup> RSA Private Keys conform to the format described in the [XML Key Management Specification (XKMS)](https://en.wikipedia.org/wiki/XKMS). Public keys (for all algorithms, save for Ed25519 / Curve25519) conform to the format described in the [XML Signature](https://en.wikipedia.org/wiki/XML_Signature) standard.
+<sup style="color: red"><strong>[6]</strong></sup> Under the hood these encrypted keys use a [modified bcrypt implementation](bcrypt.md), which slows things down considerably. Furthermore, due to these modifications, neither [`crypt()`](https://www.php.net/manual/en/function.crypt.php) or [`password_hash()`](https://www.php.net/manual/en/function.password-hash.php) can be used to speed things up.
+
+<sup style="color: red"><strong>[7]</strong></sup> RSA Private Keys conform to the format described in the [XML Key Management Specification (XKMS)](https://en.wikipedia.org/wiki/XKMS). Public keys (for all algorithms, save for Ed25519 / Curve25519) conform to the format described in the [XML Signature](https://en.wikipedia.org/wiki/XML_Signature) standard.
 </div>
 
 ## Saving Keys
