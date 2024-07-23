@@ -217,7 +217,7 @@ If one wanted to make `Blowfish::bcrypt_hash()` support variable length password
 
 ## Making Wikipedia match OpenSSH
 
-The following changes (notated using the [phpBB MOD Text Template](phpbb.md#actions)) are for [revision 08:07, 14 May 2024 of wikipedia's bcrypt article](https://en.wikipedia.org/w/index.php?title=Bcrypt&oldid=1223800920#Algorithm). They may or may not work on other revision.
+The following changes (notated using the [phpBB MOD Text Template](phpbb.md#actions)) are for [revision 08:07, 14 May 2024 of wikipedia's bcrypt article](https://en.wikipedia.org/w/index.php?title=Bcrypt&oldid=1223800920#Algorithm). They may or may not work on other revisions.
 
 ```
 #
