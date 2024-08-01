@@ -142,6 +142,16 @@ Signatures have two components - **r** and **s**. How these two components are c
 
 SSH2-formatted signatures employee the format discussed in [RFC4253](https://tools.ietf.org/html/rfc4253#page-15) or (for Ed25519) [draft-ietf-curdle-ssh-ed25519-02](https://tools.ietf.org/html/draft-ietf-curdle-ssh-ed25519-02#section-6).
 
+### IEEE
+
+This format used with [JSON Web Signatures](https://en.wikipedia.org/wiki/JSON_Web_Signature) (JWS), JavaScript's [Web Cryptography API](https://en.wikipedia.org/wiki/Web_Cryptography_API), et al. [SubtleCrypto: sign() method - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/sign#ecdsa) explains why IEEE is used as the name:
+
+> This encoding was also proposed by the [IEEE 1363-2000](https://standards.ieee.org/ieee/1363/2049/) standard, and is sometimes referred to as the IEEE P1363 format. It differs from the [X.509](https://www.itu.int/rec/T-REC-X.509) signature structure, which is the default format produced by some tools and libraries such as [OpenSSL](https://www.openssl.org/).
+
+In the case of JSON Web Signatures the signature should also be passed through `\phpseclib3\Common\Functions\Strings::base64url_encode()`.
+
+<!-- see also https://datatracker.ietf.org/doc/html/rfc7515#page-45 -->
+
 ### Raw
 
 Returns an array with **r** and **s** as keys.
