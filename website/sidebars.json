@@ -18,7 +18,8 @@
       "rsa",
       "dsa",
       "ec",
-      "dh"
+      "dh",
+      "jwt"
     ],
     "Symmetric Keys": [
       "symmetric"
