@@ -144,7 +144,7 @@ SSH2-formatted signatures employee the format discussed in [RFC4253](https://too
 
 ### IEEE
 
-This format used with [JSON Web Signatures](https://en.wikipedia.org/wiki/JSON_Web_Signature) (JWS; [RFC7515#page-45](https://datatracker.ietf.org/doc/html/rfc7515#page-45)), JavaScript's [Web Cryptography API](https://en.wikipedia.org/wiki/Web_Cryptography_API), et al. [SubtleCrypto: sign() method - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/sign#ecdsa) explains why IEEE is used as the name:
+This format used with [JSON Web Signatures](https://en.wikipedia.org/wiki/JSON_Web_Signature) (JWS; see [RFC7515#page-45](https://datatracker.ietf.org/doc/html/rfc7515#page-45)), JavaScript's [Web Cryptography API](https://en.wikipedia.org/wiki/Web_Cryptography_API), et al. [SubtleCrypto: sign() method - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/sign#ecdsa) explains why IEEE is used as the name:
 
 > This encoding was also proposed by the [IEEE 1363-2000](https://standards.ieee.org/ieee/1363/2049/) standard, and is sometimes referred to as the IEEE P1363 format. It differs from the [X.509](https://www.itu.int/rec/T-REC-X.509) signature structure, which is the default format produced by some tools and libraries such as [OpenSSL](https://www.openssl.org/).
 
