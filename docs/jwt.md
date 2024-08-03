@@ -3,7 +3,7 @@ id: jwt
 title: Example: JWT
 ---
 
-A [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token) consists of three parts - a header a payload and a signature - each encoded separately using [Base64url](https://en.wikipedia.org/wiki/Base64#URL_applications) (`\phpseclib3\Common\Functions\Strings::base64url_encode()`) and concatenated together using periods. eg.
+A [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token) consists of three parts - a header a payload and a [signature](https://en.wikipedia.org/wiki/JSON_Web_Signature) - each encoded separately using [Base64url](https://en.wikipedia.org/wiki/Base64#URL_applications) (`\phpseclib3\Common\Functions\Strings::base64url_encode()`) and concatenated together using periods. eg.
 
 ```
 const token = base64urlEncoding(header) + '.' +
