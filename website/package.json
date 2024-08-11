@@ -8,9 +8,14 @@
     "version": "docusaurus-version",
     "rename-version": "docusaurus-rename-version"
   },
+  "resolutions": {
+    "cheerio": "0.22.0"
+  },
   "devDependencies": {
-    "docusaurus": "^1.14.7",
-    "cheerio": "^0.22.0"
+    "docusaurus": "1.14.7",
+    "cheerio": "0.22.0",
+    "truncate-html": "1.0.4",
+    "enzyme": "2.9.1"
   },
   "dependencies": {
     "react-treebeard": "^3.2.4"
