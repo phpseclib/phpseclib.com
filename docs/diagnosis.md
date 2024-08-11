@@ -114,3 +114,9 @@ define('NET_SFTP_LOGGING', SFTP::LOG_COMPLEX);
 ```
 
 The logging options are largely the same as they are for SSH2, with the caveat that there is no analog to `SSH2::LOG_REALTIME_FILE`.
+
+## getServerAlgorithms()
+
+If you get a "No compatible ... algorithms found" error it may be beneficial to do `$ssh->getServerAlgorithms()`.
+
+You can additionally see the algorithms that were negotiated by doing `$ssh->getAlgorithmsNegotiated()`. See [Using a Custom Cipher Suite](connect.md#using-a-custom-cipher-suite) for more info.
