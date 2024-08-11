@@ -9,7 +9,8 @@
     "rename-version": "docusaurus-rename-version"
   },
   "devDependencies": {
-    "docusaurus": "^1.14.7"
+    "docusaurus": "^1.14.7",
+    "cheerio": "^0.22.0"
   },
   "dependencies": {
     "react-treebeard": "^3.2.4"
