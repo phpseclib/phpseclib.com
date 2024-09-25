@@ -18,7 +18,7 @@ The following changes (notated using the [phpBB MOD Text Template](phpbb.md#acti
 private static function bcrypt_hash($sha2pass, $sha2salt)
 #
 #-----[ REPLACE WITH ]----------------------------------
-# this change is to that we can verify the changes
+# this change is so that we can verify the changes
 #
 public static function bcrypt_hash($sha2pass, $sha2salt)
 #
