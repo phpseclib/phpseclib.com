@@ -55,15 +55,15 @@ The text template is available in English only, for producing modifications inst
 ##############################################################
 
 #
-#-----[ ACTION ]------------------------------------------
+#-----[ ACTION ]----------------------------------------
 #
 
 #
-#-----[ ACTION ]------------------------------------------
+#-----[ ACTION ]----------------------------------------
 #
 
 #
-#-----[ ACTION ]------------------------------------------
+#-----[ ACTION ]----------------------------------------
 #
 
 #
@@ -270,11 +270,11 @@ All actions must be defined using a standard syntax. An action consists of the n
 
 ```
 #
-#-----[ ACTION ]------------------------------------------
+#-----[ ACTION ]----------------------------------------
 #
 do stuff here
 #
-#-----[ ACTION ]------------------------------------------
+#-----[ ACTION ]----------------------------------------
 #
 # The comment goes here
 #
@@ -290,7 +290,7 @@ The SQL action tells the person who is installing the MOD that they need to exec
 
 ```
 #
-#-----[ SQL ]------------------------------------------
+#-----[ SQL ]-------------------------------------------
 #
 INSERT INTO phpbb_config ( config_name, config_value ) VALUES ('foo', 'bar');
 ```
@@ -299,7 +299,7 @@ INSERT INTO phpbb_config ( config_name, config_value ) VALUES ('foo', 'bar');
 
 ```
 #
-#-----[ SQL ]------------------------------------------
+#-----[ SQL ]-------------------------------------------
 #
 INSERT INTO phpbb_config ( config_name, config_value ) VALUES ('foo', 'bar');
 INSERT INTO phpbb_config ( config_name, config_value ) VALUES ('foo2', 'bar2');
@@ -332,7 +332,7 @@ DIY INSTRUCTIONS are instructions that the person installing the MOD will have t
 
 ```
 #
-#-----[ DIY INSTRUCTIONS ]------------------------------------------
+#-----[ DIY INSTRUCTIONS ]------------------------------
 #
 Now if your on linux CHMOD foo.php and bar.php to 777
 Then point your web browser db_install.php and follow the instructions presented.
@@ -406,7 +406,7 @@ We recommend that you avoid using the REPLACE WITH action where avoidable. If yo
 
 ```
 #
-#-----[ REPLACE WITH ]------------------------------------------
+#-----[ REPLACE WITH ]----------------------------------
 #
 $lang['General'] = 'New string';
 ```
@@ -418,7 +418,7 @@ The AFTER, ADD action is used to add code to the file. It must be preceded by a 
 
 ```
 #
-#-----[ AFTER, ADD ]------------------------------------------
+#-----[ AFTER, ADD ]------------------------------------
 #
 if ( $userdata['user_level'] == ADMIN )
 {
@@ -434,7 +434,7 @@ The BEFORE, ADD action is exactly like the AFTER, ADD action except it adds the 
 
 ```
 #
-#-----[ BEFORE, ADD ]------------------------------------------
+#-----[ BEFORE, ADD ]-----------------------------------
 #
 if ( $userdata['user_level'] == USER )
 {
@@ -497,7 +497,7 @@ IN-LINE FIND is used to find a specific part to one line so that you can do edit
 $lang['Admin'] = 'General Admin';
 
 #
-#-----[ IN-LINE FIND ]------------------------------------------
+#-----[ IN-LINE FIND ]----------------------------------
 #
 General
 ```
@@ -509,7 +509,7 @@ The IN-LINE AFTER, ADD action adds code within the same line but after what was 
 
 ```
 #
-#-----[ IN-LINE AFTER, ADD ]------------------------------------------
+#-----[ IN-LINE AFTER, ADD ]----------------------------
 #
 phpBB
 ```
@@ -521,7 +521,7 @@ The IN-LINE BEFORE, ADD action is just like the IN-LINE AFTER, ADD action except
 
 ```
 #
-#-----[ IN-LINE BEFORE, ADD ]------------------------------------------
+#-----[ IN-LINE BEFORE, ADD ]---------------------------
 #
 phpBB
 ```
@@ -533,7 +533,7 @@ IN-LINE REPLACE WITH is used to replace all of the code that was found in IN-LIN
 
 ```
 #
-#-----[ IN-LINE REPLACE WITH ]------------------------------------------
+#-----[ IN-LINE REPLACE WITH ]--------------------------
 #
 Common
 ```
@@ -550,7 +550,7 @@ This action instructs the user to save all their edits and publish them to their
 
 ```
 #
-#-----[ SAVE/CLOSE ALL FILES ]------------------------------------------
+#-----[ SAVE/CLOSE ALL FILES ]--------------------------
 #
 # EoM
 ```
