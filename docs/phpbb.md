@@ -67,7 +67,7 @@ The text template is available in English only, for producing modifications inst
 #
 
 #
-#-----[ SAVE/CLOSE ALL FILES ]------------------------------------------
+#-----[ SAVE/CLOSE ALL FILES ]--------------------------
 #
 # EoM
 ```
