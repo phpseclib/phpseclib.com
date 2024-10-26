@@ -266,7 +266,7 @@ echo $key->toString('PuTTY', ['comment' => 'whatever']);
 
 ### OpenSSH
 
-Although OpenSSH private keys support encryption phpseclib does not support them, for various technical reasons.
+PuTTY private keys only support one encryption algorithm (aes256-ctr) so there are no methods to change it.
 
 Both OpenSSH public and private keys support comments, which can be changed thusly:
 
