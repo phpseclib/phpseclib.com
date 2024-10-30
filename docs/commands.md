@@ -137,9 +137,7 @@ After each `$ssh->read()` the timeout resets to what you set it to last. By defa
 
 `$ssh->isTimeout()` will return true if the result of the last `$ssh->read()` or `$ssh->exec()` was due to a timeout. Otherwise it will return false.
 
-`$ssh->setTimeout()` works with `$ssh->read()` and `$ssh->exec()`.
-
-Unfortunately, commands like `$ssh->exec('sleep 10')` don't work well with `$ssh->setTimeout()` as discussed in [issue # 1440](https://github.com/phpseclib/phpseclib/issues/1440). eg. if you have a timeout of 5s and are doing `$ssh->exec('sleep 10')` it may not, in fact, return after 5s, but rather, after 10s. This can somewhat be worked around by doing `$ssh->exec('nohup sleep 10 > /dev/null 2>&1 &')` or `$ssh->exec('timeout 5 sleep 10')`, depending on what you're trying to do.
+`$ssh->setTimeout()` works with `$ssh->read()` and `$ssh->exec()`. If an `$ssh->exec()` call times out and you want to run another `$ssh->exec()` call after the timed out one, do `$ssh->reset()`.
 
 ## setKeepAlive()
 
