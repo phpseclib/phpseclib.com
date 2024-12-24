@@ -88,6 +88,10 @@ $ssh->login('username', 'password');
 echo $ssh->exec('ls -latr');
 ```
 
+## Connecting to an IPv6 address
+
+When specifying a numerical IPv6 address (e.g. `fe80::1`), you must enclose the IP in square brackets—for example, `tcp://[fe80::1]:22`.
+
 ## Binding to a Specific IP Address
 
 ```php
